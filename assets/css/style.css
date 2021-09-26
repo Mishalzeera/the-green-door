@@ -1,5 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Delius&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Beth Ellen", serif;
+  background-color: midnightblue;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.nav-li-flex-parent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 1rem 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: ivory;
+}
+
+a:hover {
+  opacity: 0.7;
 }
