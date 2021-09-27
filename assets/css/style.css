@@ -47,7 +47,7 @@ a:hover {
 }
 
 .nav-return {
-  margin-left: 85vw;
+  margin-left: 95vw;
   color: ivory;
 }
 
@@ -107,6 +107,10 @@ a:hover {
 
   .nav-li-flex-parent.active {
     display: flex;
+  }
+
+  .nav-return {
+    margin-left: 80vw;
   }
 }
 
