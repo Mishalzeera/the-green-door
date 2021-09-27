@@ -9,7 +9,7 @@ $("#music-button").on("click", playMusic)
 function playMusic(){
 
   muzak.play();
-  muzak.volume = 0.5;
+  muzak.volume = 0.3;
   muzak.loop = true;
   muzak.muted = false;
 
