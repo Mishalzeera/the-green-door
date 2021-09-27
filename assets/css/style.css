@@ -21,7 +21,7 @@ body {
   color: ivory;
   /* font-size: 1.5rem; */
   background-color: black;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .container {
@@ -156,8 +156,45 @@ button {
 }
 
 form {
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  font-family: "Beth Ellen";
+
+  width: 50%;
+  height: 2rem;
+}
+
+textarea {
+  font-family: "Beth Ellen";
+
+  width: 50%;
+  resize: none;
+}
+
+form button {
+  padding: 0.5rem 2.5rem;
+}
+
+form button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  form button {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 }
