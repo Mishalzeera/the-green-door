@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Beth Ellen", serif;
   background-color: midnightblue;
+  overflow: hidden;
 }
 
 header {
@@ -25,6 +26,12 @@ header {
 a {
   text-decoration: none;
 }
+
+a:hover {
+  opacity: 0.7;
+  background-color: #444;
+}
+
 .nav-li-flex-parent {
   display: flex;
   justify-content: flex-end;
@@ -40,12 +47,9 @@ a {
   color: ivory;
 }
 
-a:hover {
-  opacity: 0.7;
-}
-
 .nav-return {
-  margin-left: 95vw;
+  margin-left: 85vw;
+  color: ivory;
 }
 
 .music-button {
@@ -55,22 +59,74 @@ a:hover {
   cursor: pointer;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+  .music-button {
+    font-size: 0.7rem;
+    padding: 0.25rem 1rem;
+    margin: 1rem;
+  }
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-li-flex-parent {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-li-flex-parent.active {
+    display: flex;
+  }
+}
+
 #about {
   height: 100vh;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 #book {
   height: 100vh;
-  background-color: green;
+  /* background-color: green; */
 }
 
 #style {
   height: 100vh;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #message {
   height: 100vh;
-  background-color: sienna;
+  /* background-color: sienna; */
 }
