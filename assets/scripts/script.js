@@ -14,20 +14,13 @@ function playMusic(){
   muzak.muted = false;
 
   $("#music-button").on("click", () => {
-    if (muzak.volume === 0.5) {
+    if (muzak.volume === 0.3) {
       muzak.volume = 0;
     } else if (muzak.volume === 0) {
-      muzak.volume = 0.5;
+      muzak.volume = 0.3;
     }
   });
 
 }
 
 
-// function checkMute(){
-//   if (muzak.volume === 0.5) {
-//     muzak.volume = 0;
-//   } else if (muzak.volume === 0) {
-//     muzak.volume = 0.5;
-//   }
-// }

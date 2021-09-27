@@ -17,16 +17,24 @@
     <title>The Green Door</title>
   </head>
   <body>
-    <header id="top">
+    <!-- log and nav in header -->
+
+    <header id="top" class="container">
       <a href="#" class="logo"
         ><img src="assets/img/PACE_Emblem_White_Flame.png" alt=""
       /></a>
       <button class="music-button" id="music-button">Music on/off</button>
+
+      <!-- toggle for mobile -->
+
       <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
+
+      <!-- nav -->
+
       <nav>
         <ul class="nav-li-flex-parent">
           <li class="nav-item">
@@ -46,18 +54,57 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
+      <!-- intro section -->
+
+      <h1>Welcome to The Green Door</h1>
+      <h2>Haircuts, Hotsauces and Cultshure.</h2>
+
+      <!-- about section -->
+
       <section id="about">
         <a href="#top" class="nav-return">Top</a>
+        <p>
+          Come to The Green Door and experience for yourself the wonders of a
+          good haircut, good conversation and a consultation with Mama Rea in
+          her chill space!
+        </p>
       </section>
+
+      <!-- booking section -->
+
       <section id="book">
         <a href="#top" class="nav-return">Top</a>
+        <a href="" class="container">Book an appointment!</a>
       </section>
+
+      <!-- style section -->
+
       <section id="style">
         <a href="#top" class="nav-return">Top</a>
       </section>
+
+      <!-- message section -->
+
       <section id="message">
         <a href="#top" class="nav-return">Top</a>
+
+        <p>Join my mailing list, drop me a line.</p>
+
+        <form action="#" method="#">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="form-message">Message</label>
+          <textarea
+            name="message"
+            id="form-message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
 

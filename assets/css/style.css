@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Delius&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +16,16 @@ html {
 
 body {
   font-family: "Beth Ellen", serif;
-  background-color: midnightblue;
+  font-family: "Lora", serif;
+  /* font-family: "Scheherazade", serif; */
+  color: ivory;
+  /* font-size: 1.5rem; */
+  background-color: black;
   overflow: hidden;
+}
+
+.container {
+  padding: 1rem 2rem;
 }
 
 header {
@@ -25,10 +37,18 @@ header {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
   opacity: 0.7;
+}
+
+button {
+  font-family: inherit;
+  color: black;
+  font-size: inherit;
+  border: unset;
 }
 
 .nav-li-flex-parent {
@@ -49,6 +69,7 @@ a:hover {
 .nav-return {
   margin-left: 90vw;
   color: ivory;
+  font-style: italic;
 }
 
 .music-button {
@@ -132,4 +153,11 @@ a:hover {
 #message {
   height: 100vh;
   /* background-color: sienna; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
