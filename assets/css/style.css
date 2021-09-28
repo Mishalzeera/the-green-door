@@ -150,6 +150,15 @@ button {
   /* background-color: red; */
 }
 
+img {
+  width: 100%;
+}
+.img-container {
+  width: 75vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
 #message {
   height: 100vh;
   /* background-color: sienna; */
