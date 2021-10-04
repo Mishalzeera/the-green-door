@@ -12,6 +12,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Calendly link widget begin -->
+    <link
+      href="https://calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <!-- Calendly link widget end -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>The Green Door</title>
@@ -20,7 +31,7 @@
     <!-- log and nav in header -->
 
     <header id="top" class="container">
-      <div class="logo"></div>
+      <div class="logo">
         <img src="assets/icons-elements/the-green-door-logo.svg" alt="" />
       </div>
       <!-- tiki man -->
@@ -79,7 +90,12 @@
 
       <section id="book">
         <a href="#top" class="nav-return">Top</a>
-        <a href="" class="container">Book an appointment!</a>
+        <button
+          class="calendar-button"
+          onclick="Calendly.showPopupWidget('https://calendly.com/thegreendoorhaarlem/30min');return false;"
+        >
+          Book an appointment!
+        </button>
       </section>
 
       <!-- style section -->
@@ -89,21 +105,40 @@
         <div class="img-container">
           <!-- <img src="./assets/img/Bees Napping.jpg" alt="" id="carousel-img" /> -->
         </div>
-
-      
       </section>
 
       <!-- about section -->
 
       <section id="about">
         <a href="#top" class="nav-return">Top</a>
-          <h2>About Rea MacSems</h2>
+        <h2>About Rea MacSems</h2>
         <p>
-          Rea Mac has been cutting men's hair for over 25years. She opened her first shop Called Eddy’s Deluxe 2001 in Sacramento California. Laying the paving the way for the hipster barber  shops that would pop up some years later. Rea has alway welcomed the oddballs and misfits from her community to share her space.Not much has changed from that shop to this shop that is, she is still welcoming local artists to show and sell their art and wares in her shop space. She and Rob of Mad Daddy’s Barber shop are hosting community based cultural gatherings.
+          Rea Mac has been cutting men's hair for over 25years. She opened her
+          first shop Called Eddy’s Deluxe 2001 in Sacramento California. Laying
+          the paving the way for the hipster barber shops that would pop up some
+          years later. Rea has alway welcomed the oddballs and misfits from her
+          community to share her space.Not much has changed from that shop to
+          this shop that is, she is still welcoming local artists to show and
+          sell their art and wares in her shop space. She and Rob of Mad Daddy’s
+          Barber shop are hosting community based cultural gatherings.
         </p>
-        <img src="./assets/icons-elements/tiki-man-3.png" alt="" class="tiki-img">
-      <img src="./assets/icons-elements/tiki-man-4.png" alt="" class="tiki-img">
-      <img src="./assets/icons-elements/tiki-man-5.png" alt="" class="tiki-img">
+        <div class="img-container">
+          <img
+            src="./assets/icons-elements/tiki-man-3.png"
+            alt=""
+            class="tiki-img"
+          />
+          <img
+            src="./assets/icons-elements/tiki-man-4.png"
+            alt=""
+            class="tiki-img"
+          />
+          <img
+            src="./assets/icons-elements/tiki-man-5.png"
+            alt=""
+            class="tiki-img"
+          />
+        </div>
       </section>
       <!-- message section -->
 

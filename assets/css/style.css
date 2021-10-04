@@ -21,10 +21,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Dont forget the line height is different with Scheh */
 body {
   font-family: "Beth Ellen", serif;
   font-family: "Scheherazade", serif;
-
+  line-height: 0.9;
   color: var(--main-font-clr);
   font-size: 1.5rem;
   background-color: var(--background);
@@ -56,6 +57,16 @@ button {
   color: var(--main-font-clr);
   font-size: inherit;
   border: unset;
+  transition: all 350ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.logo {
+  width: 40%;
 }
 
 .tiki-img {
@@ -114,6 +125,8 @@ button {
 }
 
 @media (max-width: 400px) {
+  .container {
+  }
   header {
     flex-direction: column;
   }
@@ -156,7 +169,7 @@ button {
 }
 
 #book {
-  background-image: url("../icons-elements/tiki-man-2.png");
+  /* background-image: url("../icons-elements/tiki-man-2.png"); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 3rem;
@@ -171,6 +184,12 @@ button {
   height: 100vh;
 }
 
+@media (maxwidth: 400px) {
+  #style {
+    background-image: none;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -181,10 +200,10 @@ img {
 }
 
 #about {
-  background-image: url("../icons-elements/palm-1.png"),
-    url(../icons-elements/cabin.png);
-  background-repeat: no-repeat;
-  background-position: right, left;
+  /* background-image: url("../icons-elements/palm-1.png"), */
+  /* url(../icons-elements/cabin.png); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right, left; */
   height: 100vh;
   /* background-color: yellow; */
 }
