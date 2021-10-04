@@ -48,10 +48,12 @@ header {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 250ms ease-in-out;
 }
 
 a:hover {
-  opacity: 0.7;
+  color: var(--green);
+  opacity: 0.5;
 }
 
 button {
@@ -303,15 +305,43 @@ img {
 
 .footer {
   font-family: var(--ceviche);
+  font-size: 1.6rem;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .footer-left *,
-.footer-right *,
-.footer-center * {
+.footer-right * {
   display: block;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.donkey-img {
+  width: 200px;
+}
+
+.smile-shout-out {
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Scheherazade", serif;
+}
+
+.smile-dark-green {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+.computer-girl {
+  width: 50px;
 }
 
 @media (max-width: 800px) {
@@ -321,6 +351,10 @@ img {
   .footer {
     text-align: center;
     flex-direction: column;
+  }
+  .smile-shout-out {
+    width: 150px;
+    margin: 1rem auto;
   }
 }
 /* form {
