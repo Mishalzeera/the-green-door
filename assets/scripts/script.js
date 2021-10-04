@@ -48,16 +48,6 @@ function headingAnim() {
   gsap.from("#the-green-door", {opacity: 0, x: "-50vw", duration: 2})
 }
 
-
-// carousel logic
-
-// const imgList = ["../assets/img/style-1.jpg", "../assets/img/style-2.jpg", "../assets/img/style-3.jpg", "../assets/img/style-4.jpg", "../assets/img/style-5.jpg", "../assets/img/style-6.jpg", "../assets/img/style-7.jpg"]
-
-// function imgCarousel() {
-
-  
-  
-  
  
 
 
