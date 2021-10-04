@@ -23,6 +23,7 @@
       defer
     ></script>
     <!-- Calendly link widget end -->
+    <link rel="stylesheet" href="assets/css/carousel-styles.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>The Green Door</title>
@@ -30,9 +31,13 @@
   <body>
     <!-- log and nav in header -->
 
-    <header id="top" class="container">
+    <header class="container">
       <div class="logo">
-        <img src="assets/icons-elements/the-green-door-logo.svg" alt="" />
+        <img
+          src="assets/icons-elements/the-green-door-logo.svg"
+          alt=""
+          id="the-green-door"
+        />
       </div>
       <!-- tiki man -->
       <img
@@ -43,7 +48,7 @@
 
       <!-- toggle for mobile -->
 
-      <a href="#" class="toggle-button">
+      <a href="#" class="toggle-button" id="top">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -74,16 +79,30 @@
       <!-- music on/off button  -->
       <button class="music-button" id="music-button">Music on/off</button>
       <!-- intro section -->
+      <div class="welcome-oddball">
+        <h1>Welcome to The Green Door</h1>
+        <br />
+        <h2>Barber And Oddball Shopping</h2>
+        <br />
+        <h3>Doelstraat 31, Haarlem</h3>
+        <h4>0616618287</h4>
+        <br />
+      </div>
 
-      <h1>Welcome to The Green Door</h1>
-      <h2>Barber And Oddball Shopping</h2>
-
+      <p>
+        Specializing in 50’s and 40’s hair styles. <br /><br />
+        Oddball shopping.<br /><br />
+        <em>Be an oddball.</em>
+      </p>
+      <br />
+      <p>Open Thursdays and Saturdays 13:00 - 17:00</p>
       <!-- fern -->
-      <img
-        src="./assets/icons-elements/fern-1.png"
-        alt="fern"
-        class="fern tiki-img"
-      />
+      <div class="fern-flex">
+        <img src="./assets/icons-elements/fern-1.png" alt="fern" class="fern" />
+        <img src="./assets/icons-elements/fern-1.png" alt="fern" class="fern" />
+        <img src="./assets/icons-elements/fern-1.png" alt="fern" class="fern" />
+        <img src="./assets/icons-elements/fern-1.png" alt="fern" class="fern" />
+      </div>
 
       <!-- booking section -->
 
@@ -101,8 +120,34 @@
 
       <section id="style">
         <a href="#top" class="nav-return">Top</a>
-        <div class="img-container">
-          <img src="./assets/img/style-1.jpg" alt="" id="carousel-img" />
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="./assets/img/style-1.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/style-2.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/style-3.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/style-4.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/style-5.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/style-6.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/img/style-7.jpg" style="width: 100%" />
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </section>
 
@@ -126,7 +171,7 @@
             </p>
             <img src="./assets/img/about-rea.jpg" alt="" class="about-img" />
           </div>
-          <div class="img-container">
+          <div class="about-tiki-container">
             <img
               src="./assets/icons-elements/tiki-man-3.png"
               alt=""
@@ -145,31 +190,33 @@
           </div>
         </div>
       </section>
-      <!-- message section -->
-
-      <!-- <section id="message">
-        <a href="#top" class="nav-return">Top</a>
-
-        <p>Join my mailing list, drop me a line.</p>
-
-        <form action="#" method="#">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-          <label for="form-message">Message</label>
-          <textarea
-            name="message"
-            id="form-message"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section> -->
     </main>
 
-    <footer></footer>
+    <footer class="footer container">
+      <div class="footer-left">
+        <a href="https://www.reatortilla.wordpress.com" target="_blank"
+          >Rea's Blog</a
+        >
+        <a href="https://www.instagram.com/thegreendoor31/" target="_blank"
+          >The Green Door On Instagram</a
+        >
+        <a href="https://www.facebook.com/Thegreendoorhaarlem/" target="_blank"
+          >The Green Door On Facebook</a
+        >
+      </div>
+      <div class="footer-center">
+        <img
+          src="./assets/icons-elements/donkey-1.png"
+          alt="Tiki Man"
+          class="tiki-img"
+        />
+      </div>
+      <div class="footer-right">
+        <p>Whatsapp: The Green Door</p>
+        <p>0616618287</p>
+        <p>greendoorhaarlem@gmail.com</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

@@ -124,20 +124,31 @@ button:hover {
 }
 
 .toggle-button .bar {
-  height: 3px;
+  height: 2px;
   width: 100%;
   background-color: var(--main-font-clr);
   border-radius: 10px;
 }
 
-@media (max-width: 400px) {
+.fern {
+  width: 20px;
+  margin: 1rem;
+}
+.fern-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
   header {
     flex-direction: column;
+    margin-top: 2rem;
   }
 
   .logo {
-    width: 80%;
+    width: 100%;
   }
+
   .music-button {
     font-size: 2rem;
     padding: 0.5rem 1rem;
@@ -171,10 +182,13 @@ button:hover {
   .nav-return {
     margin-left: 80vw;
   }
+
+  .welcome-oddball {
+    text-align: center;
+  }
 }
 
 #book {
-  height: 100vh;
 }
 
 .calendar-button {
@@ -197,7 +211,7 @@ button:hover {
   opacity: 1;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .calendar-button {
     margin-top: 1rem;
     background-image: none;
@@ -208,10 +222,25 @@ button:hover {
   background-image: url("../icons-elements/frame.png");
   background-repeat: no-repeat;
   background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
-@media (max-width: 400px) {
+.slide-sides {
+  width: 100px;
+}
+
+.style-triple-flex {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
   #style {
     background-image: none;
   }
@@ -219,11 +248,6 @@ button:hover {
 
 img {
   width: 100%;
-}
-.img-container {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 #about {
@@ -253,9 +277,15 @@ img {
   width: 15%;
 }
 
-@media (max-width: 400px) {
+.about-tiki-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+@media (max-width: 800px) {
   .about-flex {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .about-p {
     width: 100%;
@@ -263,10 +293,36 @@ img {
   }
   .about-img {
     width: 100%;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+  }
+
+  .about-tiki-container {
+    justify-content: center;
   }
 }
 
+.footer {
+  font-family: var(--ceviche);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-left *,
+.footer-right *,
+.footer-center * {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .footer-center {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    flex-direction: column;
+  }
+}
 /* form {
   margin-top: 10vh;
   display: flex;

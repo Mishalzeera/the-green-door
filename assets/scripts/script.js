@@ -4,8 +4,8 @@ $(document).ready(function() {
   // wait until images, links, fonts, stylesheets, scripts, and other media assets are loaded
 
   $(window).bind("load", function() {
-   headingAnim()
-    imgCarousel()
+  headingAnim();
+  imgCarousel()
   });
   
   
@@ -45,27 +45,50 @@ function playMusic(){
 
 
 function headingAnim() {
-  gsap.from("#top", {opacity: 0, x: "-50vw", duration: 2})
+  gsap.from("#the-green-door", {opacity: 0, x: "-50vw", duration: 2})
 }
 
 
 // carousel logic
 
-const imgList = ["./assets/img/Beach 2.png", "./assets/img/Beach.png", "./assets/img/Bees Napping.jpg"]
+// const imgList = ["../assets/img/style-1.jpg", "../assets/img/style-2.jpg", "../assets/img/style-3.jpg", "../assets/img/style-4.jpg", "../assets/img/style-5.jpg", "../assets/img/style-6.jpg", "../assets/img/style-7.jpg"]
 
-function imgCarousel() {
+// function imgCarousel() {
 
   
-  // let tl = gsap.timeline({repeat: -1})
-  // tl.fromTo("#carousel-img", {src: imgList[0], opacity: 0}, {opacity: 1, duration: 1})
-  // .fromTo("#carousel-img", {src: imgList[0], opacity: 1}, {opacity: 0, duration: 1})
-  // .fromTo("#carousel-img", {src: imgList[1], opacity: 0}, {opacity: 1, duration: 1})
-  // .fromTo("#carousel-img", {src: imgList[1], opacity: 1}, {opacity: 0, duration: 1})
-  // .fromTo("#carousel-img", {src: imgList[2], opacity: 0}, {opacity: 1, duration: 1})
-  // .to("#carousel-img", {src: imgList[0], opacity: 0, duration: 1})
+  
+  
  
 
 
    
 
+// }
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
