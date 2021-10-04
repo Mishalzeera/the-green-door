@@ -221,25 +221,15 @@ button:hover {
 }
 
 #style {
-  background-image: url("../icons-elements/frame.png");
-  background-repeat: no-repeat;
+  background-image: url("../icons-elements/frame.png"),
+    url("../icons-elements/cork-board.png");
+  background-repeat: no-repeat, repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.slide-sides {
-  width: 100px;
-}
-
-.style-triple-flex {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 @media (max-width: 800px) {

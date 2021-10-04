@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   $(window).bind("load", function() {
   headingAnim();
-  imgCarousel()
+  slidesAnim()
   });
   
   
@@ -48,6 +48,10 @@ function headingAnim() {
   gsap.from("#the-green-door", {opacity: 0, x: "-50vw", duration: 2})
 }
 
+
+function slidesAnim() {
+  gsap.to("#slides", {rotate: 2, duration: 3})
+}
  
 
 
