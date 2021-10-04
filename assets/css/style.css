@@ -30,6 +30,8 @@ body {
   font-size: 1.7rem;
   background-color: var(--background);
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -96,10 +98,14 @@ button:hover {
 }
 
 .music-button {
-  background-image: url("../icons-elements/uke.png");
+  background-image: url("../icons-elements/uke.png"),
+    url("../icons-elements/uke.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: right, left;
+  margin-bottom: 3rem;
+  width: 100%;
+  border: 1px solid black;
   padding: 0.5rem 3rem;
   opacity: 0.8;
   font-family: inherit;
@@ -125,8 +131,6 @@ button:hover {
 }
 
 @media (max-width: 400px) {
-  .container {
-  }
   header {
     flex-direction: column;
   }
@@ -135,10 +139,11 @@ button:hover {
     width: 80%;
   }
   .music-button {
-    font-size: 0.7rem;
-    padding: 0.25rem 1rem;
-    margin: 1rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    /* margin: 1rem; */
   }
+
   .toggle-button {
     display: flex;
   }
@@ -173,18 +178,30 @@ button:hover {
 }
 
 .calendar-button {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
   background-color: inherit;
-  background-image: url("../icons-elements/palm-2.png");
-  background-position: right;
+  background-image: url("../icons-elements/palm-2.png"),
+    url("../icons-elements/palm-1.png");
+  background-position: right, left;
   background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  font-size: 3rem;
   width: 100%;
   height: 50vh;
+  text-align: center;
   transition: all 350ms ease-in-out;
 }
 
 .calendar-button:hover {
   background-color: var(--green);
   opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .calendar-button {
+    margin-top: 1rem;
+    background-image: none;
+  }
 }
 
 #style {
@@ -194,7 +211,7 @@ button:hover {
   height: 100vh;
 }
 
-@media (maxwidth: 400px) {
+@media (max-width: 400px) {
   #style {
     background-image: none;
   }
@@ -204,29 +221,53 @@ img {
   width: 100%;
 }
 .img-container {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 #about {
-  /* background-image: url("../icons-elements/palm-1.png"), */
-  /* url(../icons-elements/cabin.png); */
-  /* background-repeat: no-repeat; */
-  /* background-position: right, left; */
-  height: 100vh;
-  /* background-color: yellow; */
 }
 
 .about-card {
-  box-shadow: 5px 5px 5px black;
-  width: 75%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
+  width: 100%;
   padding: 1rem;
   text-align: left;
   margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.123);
 }
 
-form {
+.about-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-p {
+  width: 80%;
+  line-height: 1.2;
+}
+
+.about-img {
+  width: 15%;
+}
+
+@media (max-width: 400px) {
+  .about-flex {
+    flex-direction: column;
+  }
+  .about-p {
+    width: 100%;
+    margin: 1rem;
+  }
+  .about-img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* form {
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
@@ -268,4 +309,4 @@ form button:hover {
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
-}
+} */
