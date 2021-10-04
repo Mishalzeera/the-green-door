@@ -223,7 +223,7 @@ button:hover {
 #style {
   background-image: url("../icons-elements/frame.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
