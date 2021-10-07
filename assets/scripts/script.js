@@ -6,7 +6,7 @@ $(document).ready(function() {
   $(window).bind("load", function() {
   headingAnim();
   slidesAnim();
-  tikiManAnim()
+  tikiManAnim();
   });
   
   
@@ -23,14 +23,16 @@ $(".toggle-button").on("click", () => {
 // Music logic 
 
 const muzak = new Audio("assets/music/the-green-door.mp3")
+const muzak2 =new Audio("assets/music/muzak-2.mp3")
 $("#music-button").on("click", playMusic)
 
 function playMusic(){
+  let i = muzak2;
 
-  muzak.play();
-  muzak.volume = 0.3;
-  muzak.loop = true;
-  muzak.muted = false;
+  i.play();
+  i.volume = 0.3;
+  i.loop = true;
+  i.muted = false;
 
   $("#music-button").on("click", () => {
     if (muzak.volume === 0.3) {
