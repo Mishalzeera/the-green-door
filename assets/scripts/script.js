@@ -35,10 +35,10 @@ function playMusic(){
   i.muted = false;
 
   $("#music-button").on("click", () => {
-    if (muzak.volume === 0.3) {
-      muzak.volume = 0;
-    } else if (muzak.volume === 0) {
-      muzak.volume = 0.3;
+    if (i.volume === 0.3) {
+      i.volume = 0;
+    } else if (i.volume === 0) {
+      i.volume = 0.3;
     }
   });
 
