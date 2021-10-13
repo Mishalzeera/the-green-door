@@ -32,7 +32,7 @@ body {
   font-size: 1.7rem;
   background-color: var(--background);
   background-image: url("../icons-elements/thatch-bg.jpg");
-  overflow: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -107,18 +107,27 @@ button:hover {
 }
 
 .music-button {
-  background-image: url("../icons-elements/uke.png"),
-    url("../icons-elements/uke.png");
+  /* background-image: url("../icons-elements/uke.png"), */
+  /* url("../icons-elements/uke.png"); */
+  background-image: url("../icons-elements/barbed-wire-music-box.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right, left;
-  margin-bottom: 3rem;
-  width: 100%;
-  border: 1px solid black;
-  padding: 0.5rem 3rem;
+  background-size: auto;
+  background-color: unset;
+  margin: 3rem 0;
+
+  width: 300px;
+  height: 110px;
+  /* border: 1px solid black; */
+  /* padding: 0.5rem 3rem; */
   opacity: 0.8;
   font-family: inherit;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .music-button {
+    margin-left: -4vw;
+  }
 }
 
 .toggle-button {
