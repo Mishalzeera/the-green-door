@@ -31,6 +31,7 @@ body {
   color: var(--main-font-clr);
   font-size: 1.7rem;
   background-color: var(--background);
+  background-image: url("../icons-elements/thatch-bg.jpg");
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -77,6 +78,10 @@ button:hover {
 
 .tiki-img {
   width: 50px;
+}
+
+.bean-boy-top {
+  width: 200px;
 }
 
 .nav-li-flex-parent {
