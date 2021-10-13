@@ -6,7 +6,7 @@ $(document).ready(function() {
   $(window).bind("load", function() {
   headingAnim();
   slidesAnim();
-  tikiManAnim();
+  beanBoyTopAnim();
   });
   
   
@@ -51,10 +51,9 @@ function headingAnim() {
   gsap.from("#the-green-door", {opacity: 0, x: "-50vw", duration: 2})
 }
 
-function tikiManAnim() {
-  let tl = gsap.timeline({repeat: 8, yoyo : true})
-  tl.fromTo("#tiki-man", {rotate: -3}, {rotate: +3, duration: .08})
-  .fromTo("#tiki-man", {rotate: +3}, {rotate: 0, duration: .08})
+function beanBoyTopAnim() {
+
+  gsap.to("#bean-boy-top", {rotate: -24, duration: .5})
   
 }
 
