@@ -27,6 +27,7 @@ html {
 body {
   font-family: "Beth Ellen", serif;
   font-family: "Scheherazade", serif;
+  font-family: "Rancho", serif;
   line-height: 0.9;
   color: var(--main-font-clr);
   font-size: 1.7rem;
@@ -112,14 +113,15 @@ button:hover {
   background-image: url("../icons-elements/barbed-wire-music-box.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: unset;
+  background-color: rgb(255, 255, 240);
   margin: 3rem 0;
 
   width: 300px;
   height: 110px;
   /* border: 1px solid black; */
   /* padding: 0.5rem 3rem; */
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  border-radius: 5px;
   font-family: inherit;
   cursor: pointer;
 }
@@ -225,7 +227,7 @@ button:hover {
 }
 
 .calendar-button:hover {
-  background-color: var(--green);
+  background-color: ivory;
   opacity: 1;
 }
 
@@ -340,6 +342,7 @@ img {
   align-items: center;
   justify-content: flex-start;
   font-family: "Scheherazade", serif;
+  background-color: ivory;
 }
 
 .smile-dark-green {
@@ -347,7 +350,7 @@ img {
   font-size: 2rem;
 }
 .computer-girl {
-  width: 50px;
+  width: 100px;
 }
 
 @media (max-width: 800px) {
@@ -359,7 +362,7 @@ img {
     flex-direction: column;
   }
   .smile-shout-out {
-    width: 150px;
+    width: 280px;
     margin: 1rem auto;
   }
 }
