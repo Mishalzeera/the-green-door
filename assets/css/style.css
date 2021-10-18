@@ -87,6 +87,10 @@ button:hover {
   width: 200px;
 }
 
+.box-shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
+}
+
 .nav-li-flex-parent {
   display: flex;
   justify-content: flex-end;
@@ -125,11 +129,11 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .music-button {
     margin-left: -4vw;
   }
-}
+} */
 
 .toggle-button {
   position: absolute;
@@ -149,14 +153,18 @@ button:hover {
   border-radius: 10px;
 }
 
-.fern {
+.welcome-oddball {
+  font-size: 3rem;
+}
+
+/* .fern {
   width: 20px;
   margin: 1rem;
 }
 .fern-flex {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 @media (max-width: 800px) {
   header {
@@ -165,7 +173,7 @@ button:hover {
   }
 
   .logo {
-    width: 100%;
+    width: 120%;
   }
 
   .music-button {
@@ -203,15 +211,16 @@ button:hover {
   }
 
   .welcome-oddball {
+    font-size: 2rem;
     text-align: center;
   }
 }
 
 #book {
+  margin: 3rem 0;
 }
 
 .calendar-button {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
   color: var(--green-300);
   border: 1px solid rgba(0, 0, 0, 0.123);
   border-radius: 5px;
@@ -244,11 +253,13 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* border: 1px solid purple; */
 }
 
 @media (max-width: 800px) {
   #style {
     background-image: none;
+    height: 60vh;
   }
 }
 
@@ -260,7 +271,7 @@ img {
 }
 
 .about-card {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
+  margin: 3rem 0;
   background-color: var(--red-800);
   color: var(--green-300);
   width: 100%;
@@ -341,16 +352,22 @@ img {
   align-items: center;
   justify-content: flex-start;
   font-family: "Scheherazade", serif;
-  background-color: var(--red-600);
+  background-color: var(--red-800);
+  color: var(--red-100)
   border-radius: 5px;
 }
 
 .smile-dark-green {
   color: rgb(0, 0, 0);
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: "Scheherazade", serif;
+  letter-spacing: 2px;
+  margin-left: 10px;
 }
 .computer-girl {
   width: 60px;
+  padding: .5rem;
+ 
 }
 
 @media (max-width: 800px) {

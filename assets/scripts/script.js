@@ -53,7 +53,7 @@ function headingAnim() {
 
 function beanBoyTopAnim() {
 
-  gsap.to("#bean-boy-top", {rotate: -24, duration: .5})
+  gsap.from("#bean-boy-top", {rotate: -24, duration: .5})
   
 }
 
