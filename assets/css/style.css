@@ -282,6 +282,10 @@ img {
   border-radius: 5px;
 }
 
+.about-rea-heading {
+  margin: 1rem 0;
+}
+
 .about-flex {
   display: flex;
   justify-content: space-evenly;
