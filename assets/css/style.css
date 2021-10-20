@@ -256,12 +256,23 @@ button:hover {
   /* border: 1px solid purple; */
 }
 
+.click-to-see {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+
+}
+
 @media (max-width: 800px) {
   #style {
     background-image: none;
     height: 60vh;
   }
+  .click-to-see {
+    background-color: var(--red-800);
+  }
 }
+
 
 img {
   width: 100%;
@@ -354,25 +365,21 @@ img {
   color: var(--green);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  font-family: "Scheherazade", serif;
+  justify-content: center;
+  font-family: inherit;
   background-color: var(--red-800);
   color: var(--red-100)
   border-radius: 5px;
 }
 
 .smile-dark-green {
-  color: rgb(0, 0, 0);
+  color: var(--green-300);
   font-size: 3rem;
   font-family: "Scheherazade", serif;
   letter-spacing: 2px;
   margin-left: 10px;
 }
-.computer-girl {
-  width: 60px;
-  padding: .5rem;
- 
-}
+
 
 @media (max-width: 800px) {
   .footer-center {
