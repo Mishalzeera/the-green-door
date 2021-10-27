@@ -267,20 +267,13 @@ button:hover {
 
 #prices {
   width: 100%;
-  margin: 5rem auto;
+  margin: 10rem auto 2rem;
 
 }
 
 #priceboard {
 width: 100%;
 opacity: .9;
-}
-
-@media (min-width: 500px) {
-  #prices {
-    width: 70%;
-    margin: 5rem auto;
-  }
 }
 
 img {
