@@ -1,32 +1,28 @@
 // wait until DOM is ready
-$(document).ready(function() {
-  
+$(document).ready(function () {
   // wait until images, links, fonts, stylesheets, scripts, and other media assets are loaded
 
-  $(window).bind("load", function() {
-  headingAnim();
-  slidesAnim();
-  beanBoyTopAnim();
+  $(window).bind("load", function () {
+    headingAnim();
+    slidesAnim();
+    beanBoyTopAnim();
+    priceAnim();
   });
-  
-  
 });
-
-
 
 // mobile icon nav toggle
 
 $(".toggle-button").on("click", () => {
-  $(".nav-li-flex-parent").slideToggle()
-})
+  $(".nav-li-flex-parent").slideToggle();
+});
 
-// Music logic 
+// Music logic
 
-const muzak = new Audio("assets/music/the-green-door.mp3")
-const muzak2 =new Audio("assets/music/muzak-2.mp3")
-$("#music-button").on("click", playMusic)
+const muzak = new Audio("assets/music/the-green-door.mp3");
+const muzak2 = new Audio("assets/music/muzak-2.mp3");
+$("#music-button").on("click", playMusic);
 
-function playMusic(){
+function playMusic() {
   let i = muzak2;
 
   i.play();
@@ -41,29 +37,25 @@ function playMusic(){
       i.volume = 0.3;
     }
   });
-
 }
 
 // animates the header elements
 
-
 function headingAnim() {
-  gsap.from("#the-green-door", {opacity: 0, x: "-50vw", duration: 2})
+  gsap.from("#the-green-door", { opacity: 0, x: "-50vw", duration: 2 });
 }
 
 function beanBoyTopAnim() {
-
-  gsap.from("#bean-boy-top", {rotate: -24, duration: .5})
-  
+  gsap.from("#bean-boy-top", { rotate: -24, duration: 0.5 });
 }
 
 function slidesAnim() {
-  gsap.to("#slides", {rotate: 2, duration: 3})
+  gsap.to("#slides", { rotate: 2, duration: 3 });
 }
- 
 
-
-   
+function priceAnim() {
+  gsap.to("#prices", { rotate: -3, duration: 3 });
+}
 
 // }
 var slideIndex = 1;
@@ -71,26 +63,30 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}

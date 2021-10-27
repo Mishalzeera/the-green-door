@@ -28,7 +28,6 @@ body {
   font-family: "Beth Ellen", serif;
   font-family: "Scheherazade", serif;
   font-family: "Rancho", serif;
-  line-height: 0.9;
   color: var(--main-font-clr);
   font-size: 1.7rem;
   background-color: var(--background);
@@ -74,6 +73,7 @@ button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
+
 
 .logo {
   width: 40%;
@@ -166,7 +166,7 @@ button:hover {
   .music-button {
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    /* margin: 1rem; */
+    text-align: center;
   }
 
   .toggle-button {
@@ -260,6 +260,24 @@ button:hover {
   }
 }
 
+#prices {
+  width: 340px;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+
+}
+
+#priceboard {
+width: 100%;
+opacity: .9;
+}
+
+@media (min-width: 500px) {
+  #prices {
+    width: 70%;
+    margin: 5rem auto;
+  }
+}
 
 img {
   width: 100%;
