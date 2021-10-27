@@ -113,16 +113,21 @@ button:hover {
   font-style: italic;
 }
 
+.music-flex {
+  display: flex;
+
+}
+
 .music-button {
   /* background-image: url("../icons-elements/uke.png"), */
   /* url("../icons-elements/uke.png"); */
   background-image: url("../icons-elements/barbed-wire-music-box.png");
   background-repeat: no-repeat;
   background-size: auto;
-  margin: 3rem 0;
-
   width: 300px;
   height: 110px;
+  margin: 3rem auto;
+
 
   border-radius: 5px;
   font-family: inherit;
